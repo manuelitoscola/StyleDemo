@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">StyleDemo</string>
-    <string name="hello_world">Hello World</string>
-    <string name="button_small">Small Font</string>
-    <string name="button_large">Large Font</string>
+    <string name="app_name">AiVuCam</string>
+    <string name="button_add">Add</string>
+    <string name="ipaddress">Address:</string>
+    <string name="enter_ip_address">address...</string>
+    <string name="dvs_add">Insert:</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="enter_username">username...</string>
+    <string name="enter_password">password...</string>
 </resources>
