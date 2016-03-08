@@ -20,7 +20,8 @@
         android:layout_alignParentStart="true"
         android:ems="16"
         android:text="@string/enter_ip_address"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:autoText="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +38,7 @@
         android:id="@+id/editText_username"
         android:layout_below="@+id/textView_username"
         android:layout_alignParentStart="true"
-        android:ems="10"
+        android:ems="16"
         android:text="@string/enter_username"
         android:inputType="text"/>
 
@@ -56,7 +57,7 @@
         android:id="@+id/editText_password"
         android:layout_below="@+id/textView_password"
         android:layout_alignParentStart="true"
-        android:ems="10"
+        android:ems="16"
         android:text="@string/enter_password"
         android:inputType="text"/>
 
