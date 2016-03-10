@@ -8,4 +8,5 @@
     <string name="password">Password</string>
     <string name="enter_username">username</string>
     <string name="enter_password">password</string>
+    <string name="title_add_dvs">Connect to Device:</string>
 </resources>
