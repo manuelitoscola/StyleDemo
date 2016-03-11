@@ -3,6 +3,8 @@
     package="us.manuelito.styledemo"
     android:versionCode="0"
     android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
