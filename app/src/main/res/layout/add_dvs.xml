@@ -27,7 +27,8 @@
         android:inputType="text"
         android:background="@drawable/edit_text_style"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:text="10.10.22.108" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +55,8 @@
         android:inputType="text"
         android:background="@drawable/edit_text_style"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:text="aitek"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,7 +83,8 @@
         android:inputType="textPassword"
         android:background="@drawable/edit_text_style"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:text="aitek99"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"

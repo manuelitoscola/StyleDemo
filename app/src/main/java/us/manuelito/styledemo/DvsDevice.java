@@ -104,6 +104,8 @@ public class DvsDevice implements AiVuDevice {
         protected String doInBackground(String... arg0) {
             String text = null;
             String urlPath = "https://" + address + "/api/aivu_cfg/v1/create_token";
+
+            Log.v(TAG, "URL: " + urlPath);
             /*
             StringBuilder stringBuilder = new StringBuilder();
             HttpClient httpClient = new DefaultHttpClient();
@@ -160,14 +162,15 @@ public class DvsDevice implements AiVuDevice {
 
                 // Add any data you wish to post here
                 OutputStreamWriter out = new OutputStreamWriter(conn.getOutputStream());
-                out.write("username=" + username);
-                out.write("password=" + password);
+                out.write("username=" + username + "&password=" + password);
+                Log.v(TAG, "Sending POST [username=" + username + "&password=" + password + "]");
                 out.close();
 
                 conn.connect();
                 conn.getInputStream();
                 InputStream in = new BufferedInputStream(conn.getInputStream());
                 text = readIt(in, 2048);
+                Log.v(TAG, text);
                 in.close();
 
             } catch (IOException e) {
@@ -186,7 +189,6 @@ public class DvsDevice implements AiVuDevice {
             //super.onPostExecute(response);
             Log.v(TAG, "Http Post Response: " + response);
         }
-
     }
 
     public boolean isLogging() {
@@ -207,6 +209,7 @@ public class DvsDevice implements AiVuDevice {
                 boolean delayed = handler.postDelayed(new Runnable() {
                     public void run() {
                         logging = false;
+                        Log.v(TAG, "Login running....");
                         new TheTaskJsonLogin().execute();
                         if (address.equals("10.10.33.110"))
                             logged = true;
