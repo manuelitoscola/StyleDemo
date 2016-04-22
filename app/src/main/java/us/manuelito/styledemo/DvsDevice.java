@@ -103,7 +103,7 @@ public class DvsDevice implements AiVuDevice {
         @Override
         protected String doInBackground(String... arg0) {
             String text = null;
-            String urlPath = "https://" + address + "/api/aivu_cfg/v1/create_token";
+            String urlPath = "https://" + address + "/api/aivu_cfg/v1/auth/create_token";
 
             Log.v(TAG, "URL: " + urlPath);
             /*
@@ -221,7 +221,7 @@ public class DvsDevice implements AiVuDevice {
                             }
                         });
                     }
-                }, 10000);
+                }, 1000);
             }
         }).start();
     }
